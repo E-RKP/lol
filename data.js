@@ -83,4 +83,103 @@ function sommaArray (array){
 sommaArray (arr);
 console.log(sommo)
 
+function èPari(numeraccio){
 
+if (numeraccio % 2 == 0){
+  return true;
+}else{
+  return false;
+}
+}
+
+
+console.log(èPari(8))
+
+function saluto (nome){
+
+  return 'Ciao ' + nome;
+}
+
+
+console.log(saluto('luca'))
+
+let pro = ''
+
+function inverti (parolaaa){
+
+  for (i=0; i< parolaaa.length;i++){
+    pro = parolaaa[i]+pro
+    
+  }
+  console.log(pro)
+}
+
+inverti('let s gooo');
+
+function first (pr){
+  return pr[0];
+}
+
+console.log(first ('spurzzz'))
+
+function palindromo (okay){
+
+  let second = ''
+  for (i=0; i<okay.length; i++){
+    second = okay[i]+second
+  }
+  if (second === okay){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+console.log(palindromo('kk'))
+let somm = 0
+function sommerssd (n){
+
+  for (i=1; i<n;i++){
+    
+    somm = somm+i
+    
+  }
+  return somm;
+}
+
+console.log(sommerssd(10))
+
+let massimone = Number.NEGATIVE_INFINITY
+function maximon (roar){
+  for (i=0; i<roar.length;i++){
+    if (roar[i]>massimone){
+      massimone = roar[i]
+    }
+  }
+  return massimone;
+}
+
+console.log(maximon([0,1,2,4,7]))
+
+
+const input = document.getElementById('lol')
+const button1 = document.getElementById('button1')
+const controllo = document.getElementById('controllo')
+
+function nominastro (giga){
+
+  let wordd= ''
+  for (i=0; i<giga.length;i++){
+    
+    wordd = giga[i]+wordd
+  }
+  return wordd;
+  
+}
+
+button1.addEventListener('click', ()=>{
+
+const testoinverito = nominastro(input.value);
+controllo.innerHTML = testoinverito;
+  
+})
