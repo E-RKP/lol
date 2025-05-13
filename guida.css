@@ -93,3 +93,27 @@ body{
 display: flex;
 gap: 1rem;
 }
+
+#X{
+  color: red;
+  font-size: 1.2rem;
+  padding: 0 0.2rem;
+}
+
+#diminuire, #aumentare{
+  padding: 0.5rem 1rem;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+#diminuire:hover, #aumentare:hover{
+  background-color: rgb(80, 79, 79);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#diminuire:active, #aumentare:active{
+  background-color: black;
+}

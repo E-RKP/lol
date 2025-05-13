@@ -183,3 +183,46 @@ const testoinverito = nominastro(input.value);
 controllo.innerHTML = testoinverito;
   
 })
+
+const numerino = document.getElementById('X');
+const numeroner = document.getElementById('numerone')
+const firstButton = document.getElementById('diminuire')
+const secondButton = document.getElementById('aumentare')
+let countergig = 0
+let countermin = 0
+
+function counterplus (){
+
+  countergig++;
+  countermin++;
+  return {
+    countergig,
+    countermin
+  };
+
+}
+
+function countermeno (){
+  countergig--;
+  countermin++;
+  if (countergig < 0){
+    countergig = 0
+  }
+  return {
+    countergig,
+    countermin
+  };
+}
+
+firstButton.addEventListener('click', ()=>{
+
+  countermeno();
+  numerino.innerHTML = countermin;
+  numeroner.innerHTML = countergig;
+})
+
+secondButton.addEventListener ('click', ()=>{
+  counterplus();
+  numerino.innerHTML = countermin
+  numeroner.innerHTML = countergig;
+})
